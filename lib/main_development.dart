@@ -8,6 +8,8 @@ import 'package:tree_view_example/core/extensions/record_error_extension.dart';
 Future<void> main() async {
   runZonedGuarded(
     () {
+      F.flavor = Flavor.dev;
+
       WidgetsFlutterBinding.ensureInitialized();
 
       bootstrap(() => const App());
