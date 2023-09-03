@@ -35,7 +35,7 @@ void main() {
           returnsNormally,
         );
         expect(
-              () async {
+          () async {
             await subject(
               RecordErrorParams(
                 exception: Exception(),

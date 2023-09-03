@@ -29,9 +29,12 @@ void main() {
       final change = MockChange<dynamic>();
 
       // Act, assert
-      expect(() {
-        subject.onChange(bloc, change);
-      }, returnsNormally,);
+      expect(
+        () {
+          subject.onChange(bloc, change);
+        },
+        returnsNormally,
+      );
     });
 
     test('onError', () {
@@ -40,9 +43,12 @@ void main() {
       final bloc = MockBlocBase<dynamic>();
 
       // Act, assert
-      expect(() {
-        subject.onError(bloc, Object(), StackTrace.current);
-      }, returnsNormally,);
+      expect(
+        () {
+          subject.onError(bloc, Object(), StackTrace.current);
+        },
+        returnsNormally,
+      );
     });
   });
 }
