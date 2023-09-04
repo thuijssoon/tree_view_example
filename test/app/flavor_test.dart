@@ -38,9 +38,6 @@ void main() {
           () {
         // Arrange
         const subject = FlavorConfig<String>(
-          dev: null,
-          staging: null,
-          prod: null,
           fallback: 'fallback',
         );
         // Act, assert
@@ -63,7 +60,6 @@ void main() {
         expect(
           () {
             FlavorConfig<String>(
-              dev: null,
               prod: 'prod',
               staging: 'staging',
             );

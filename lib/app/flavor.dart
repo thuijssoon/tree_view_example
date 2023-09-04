@@ -22,9 +22,9 @@ class F {
 class FlavorConfig<T> {
   /// {@macro flavor_config}
   const FlavorConfig({
-    required this.dev,
-    required this.prod,
-    required this.staging,
+    this.dev,
+    this.prod,
+    this.staging,
     this.fallback,
   }) : assert(
           // ignore: avoid_bool_literals_in_conditional_expressions
