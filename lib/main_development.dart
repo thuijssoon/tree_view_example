@@ -15,7 +15,7 @@ Future<void> main() async {
 
       await initServiceLocator();
 
-      await bootstrap(() => const App());
+      await bootstrap(() => const App(), runApp);
     },
     (error, stackTrace) => error.recordError(stackTrace: stackTrace),
   );
