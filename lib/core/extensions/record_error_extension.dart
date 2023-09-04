@@ -1,3 +1,4 @@
+import 'package:tree_view_example/app/service_locator.dart';
 import 'package:tree_view_example/core/domain/usecases/record_error_usecase.dart';
 
 /// Extension on [Object] to record an error.
@@ -8,7 +9,7 @@ extension RecordErrorExtension on Object {
     Object? stackTrace,
     String? reason,
   }) {
-    RecordErrorUseCase()(
+    sl<RecordErrorUseCase>()(
       RecordErrorParams(
         exception: exception ?? this,
         stackTrace: stackTrace,
